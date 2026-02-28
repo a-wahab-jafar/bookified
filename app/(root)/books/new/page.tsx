@@ -9,7 +9,7 @@ const Page = () => {
                 <h1 className='page-title-xl'>
                     Add a New Book
                 </h1>
-                <p>Upload a PDF to Generate your interactive interview</p>
+                <p>Upload a PDF to Generate your interactive reading experience</p>
             </section>
             
             <UploadForm />
