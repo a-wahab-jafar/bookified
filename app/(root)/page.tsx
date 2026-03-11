@@ -6,10 +6,9 @@ import Search from "@/components/Search";
 
 export const dynamic = 'force-dynamic';
 
-const Page = async ({ searchParams }: { searchParams: Promise<{ query?: string }> }) => {
-    const { query } = await searchParams;
+const Page = async () => {
 
-    const bookResults = await getAllBooks(query)
+    const bookResults = await getAllBooks()
     const books = bookResults.success ? bookResults.data ?? [] : []
 
     return (
